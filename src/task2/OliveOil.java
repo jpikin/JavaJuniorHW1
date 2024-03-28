@@ -1,17 +1,17 @@
-package ru.geekbrains.junior.lesson1.task2;
+package task2;
 
 /**
- * Пельмени
+ * Оливковое масло
  */
-public class DumplingsMeat implements SemiFinishedFood{
+public class OliveOil implements HealthyFood{
     @Override
     public boolean getProteins() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean getFats() {
-        return false;
+        return true;
     }
 
     @Override
@@ -21,6 +21,6 @@ public class DumplingsMeat implements SemiFinishedFood{
 
     @Override
     public String getName() {
-        return "Пельмени";
+        return "Оливковое масло";
     }
 }

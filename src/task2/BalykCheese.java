@@ -1,17 +1,17 @@
-package ru.geekbrains.junior.lesson1.task2;
+package task2;
 
 /**
- * Оливковое масло
+ * Сыр Балыковый (Балык)
  */
-public class OliveOil implements HealthyFood{
+public class BalykCheese implements Snack {
     @Override
     public boolean getProteins() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean getFats() {
-        return true;
+        return false;
     }
 
     @Override
@@ -21,6 +21,6 @@ public class OliveOil implements HealthyFood{
 
     @Override
     public String getName() {
-        return "Оливковое масло";
+        return "Сыр (Балык)";
     }
 }

@@ -1,9 +1,9 @@
-package ru.geekbrains.junior.lesson1.task2;
+package task2;
 
 /**
- * Шоколадный батончик
+ * Чипсы
  */
-public class ChocolateBar implements Snack{
+public class Crisps implements Snack{
     @Override
     public boolean getProteins() {
         return false;
@@ -11,16 +11,16 @@ public class ChocolateBar implements Snack{
 
     @Override
     public boolean getFats() {
-        return false;
-    }
-
-    @Override
-    public boolean getCarbohydrates() {
         return true;
     }
 
     @Override
+    public boolean getCarbohydrates() {
+        return false;
+    }
+
+    @Override
     public String getName() {
-        return "Шоколадный батончик";
+        return "Чипсы";
     }
 }

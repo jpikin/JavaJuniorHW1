@@ -1,4 +1,4 @@
-package ru.geekbrains.junior.lesson1.task2;
+package task2;
 
 import java.util.Scanner;
 

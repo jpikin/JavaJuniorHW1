@@ -12,10 +12,9 @@ public class Main {
         List<Integer> list = List.of(1,2,3,4,5,6,7,8,9,10);
         System.out.println((list.stream()
                 .filter(i -> i % 2 == 0)
-                .mapToInt(Integer::intValue)
-                .sum() / list.stream()
-                            .filter(i -> i % 2 == 0)
-                            .toList().size()));
+                .reduce(Integer::sum).get() / list.stream()
+                                                  .filter(i -> i % 2 == 0)
+                                                  .toList().size()));
 
     }
 }
